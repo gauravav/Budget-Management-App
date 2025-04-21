@@ -1,0 +1,11 @@
+/backend/target
+/frontend/node_modules
+/.idea
+/.vscode
+/.classpath
+/.project
+/.settings
+/frontend/package-lock.json
+/frontend/dist
+/frontend/build
+/backend/src/main/resources/firebase-config.json
