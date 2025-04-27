@@ -71,9 +71,28 @@ Welcome to Personal Budget, your all-in-one personal finance management app. Wit
 
 ## 🚀 Run Locally
 
+### Backend
+
+1. Navigate to the `backend/` folder.
+2. Go to **Firebase Console > Firestore Database**
+    - Click "Create database" and set up Firestore in test mode.
+3. Go to **Project Settings > Service Accounts > Generate new private key**
+4. Rename the downloaded file to:
+   ```
+   firebase-config.json
+   ```
+5. Move the firebase-config.json file into:
+   ```
+   src/main/resources/
+   ```
+6. Run or start the Spring Boot application:
+   ```bash
+   ./mvnw spring-boot:run
+   ```
+
 ### Frontend
 
-1. Navigate to the `frontend/` folder.
+1. Navigate to the `frontend/` folder (It takaes some time to install node modules).
 2. Run:
    ```bash
    npm install
@@ -86,25 +105,6 @@ Welcome to Personal Budget, your all-in-one personal finance management app. Wit
 
 4. Go to **Firebase Console → Project Settings → Add App → Web App**, and copy the Firebase SDK configuration. 
 5. Replace the existing secrets with these new credentials in your frontend .env file.
-
-### Backend
-
-1. Navigate to the `backend/NBADBackend` folder.
-2. Go to **Firebase Console > Firestore Database**
-    - Click "Create database" and set up Firestore in test mode.
-3. Go to **Project Settings > Service Accounts > Generate new private key**
-4. Rename the downloaded file to:
-   ```
-   firebase-config.json
-   ```
-5. Move it into:
-   ```
-   src/main/resources/firebase-config.json
-   ```
-6. Run the Spring Boot application:
-   ```bash
-   ./mvnw spring-boot:run
-   ```
 
 ---
 
